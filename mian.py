@@ -161,6 +161,7 @@ def main():
         elif level == 2 and score > 30000:
             level = 3
             level_up_sound.play()
+            pygame.time.set_timer(supply_timer, 20 * 1000)
             add_small_enemies(small_enemies, enemies, 3)
             add_mid_enemies(mid_enemies, enemies, 2)
             add_big_enemies(big_enemies, enemies, 1)
@@ -169,6 +170,7 @@ def main():
         elif level == 3 and score > 60000:
             level = 4
             level_up_sound.play()
+            pygame.time.set_timer(supply_timer, 30 * 1000)
             add_small_enemies(small_enemies, enemies, 3)
             add_mid_enemies(mid_enemies, enemies, 2)
             add_big_enemies(big_enemies, enemies, 1)
